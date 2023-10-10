@@ -1,10 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Outfit:wght@400;700&family=Saira:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Outfit:wght@400;700&family=Saira+Stencil+One&family=Saira:wght@400;500&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Saira', sans-serif;
+}
+
+:root{
+  --text-primary-color: #5D5D6D;
+  --bg-primary-color: #F3F5F6
+}
+
+body{
+  background-color: var(--bg-primary-color);
 }
