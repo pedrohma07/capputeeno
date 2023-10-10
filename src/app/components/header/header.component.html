@@ -1,0 +1,27 @@
+<header class="bg-[--bg-header-color]">
+  <div class="container mx-auto flex justify-between items-center flex-wrap">
+    <h1 class="text-[--text-primary-color] font-Saira-Stencil font-normal text-[40px] leading-[60px] ml-12">
+      capputeeno
+    </h1>
+    <div class="flex items-center">
+      <div *ngIf="inputMobile" class="w-[390px] h-11 rounded-lg bg-[--bg-primary-color] relative">
+        <input type="text" class="w-full h-full bg-[--bg-primary-color] rounded-lg outline-0 px-3 font-normal" placeholder="Procurando por algo específico?">
+        <button class="absolute right-3 bottom-[20%]">
+          <i class="fas fa-search text-[--text-primary-color]"></i>
+        </button>
+      </div>
+      <div class="cart">
+        <img src="../../../assets/shopping-bag.svg" alt="">
+        <span class="notification">
+          <p>2</p>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!inputMobile" class="w-[90%] mx-auto h-11 rounded-lg bg-[--bg-primary-color] border border-[--bg-header-color] relative">
+    <input type="text" class="w-full h-full bg-[--bg-primary-color] rounded-lg outline-0 px-3 font-normal" placeholder="Procurando por algo específico?">
+    <button class="absolute right-3 bottom-[20%]">
+      <i class="fas fa-search text-[--text-primary-color]"></i>
+    </button>
+  </div>
+</header>
