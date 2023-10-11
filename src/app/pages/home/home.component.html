@@ -1,5 +1,5 @@
 <div class="flex w-[90%] lg:w-full justify-between max-w-[1280px] mx-[50px] my-5">
-  <div>
+  <div class="flex flex-col items-start sm:flex-row">
     <span class="font-semibold text-[12px] leading-5 text-center mr-3 cursor-pointer menu-item" [class.active]="selectedTab === 'todos'" (click)="selectTab('todos')">
       TODOS OS PRODUTOS
     </span>
@@ -10,11 +10,20 @@
       CANECAS
     </span>
   </div>
-  <div>
-    ordenador
+  <div class="text-[--text-dark-color] font-normal text-sm leading-6 relative">
+    <span class="cursor-pointer" (click)="setSelectIsOpen()">
+      Organizar por 
+      <i class="fa-solid fa-chevron-down"></i>
+    </span>
+    <div *ngIf="selectIsOpen" class="flex flex-col absolute bg-white w-48 rounded right-0">
+      <span class="cursor-pointer hover:bg-[--bg-primary-color] py-1 px-2">Novidades</span>
+      <span class="cursor-pointer hover:bg-[--bg-primary-color] py-1 px-2">Preço: Maior - menor</span>
+      <span class="cursor-pointer hover:bg-[--bg-primary-color] py-1 px-2">Preço: Menor - maior</span>
+      <span class="cursor-pointer hover:bg-[--bg-primary-color] py-1 px-2">Mais vendidos</span>
+    </div>
     
   </div>
 </div>
-<div >
-  <app-card class="flex flex-wrap w-[90%] lg:w-full justify-between max-w-[1280px] mx-[50px] my-5" />
+<div class="flex w-full justify-center">
+  <app-card class="flex flex-wrap w-[90%] lg:w-full justify-center sm:justify-between max-w-[1280px] sm:mx-[50px] my-5" />
 </div>

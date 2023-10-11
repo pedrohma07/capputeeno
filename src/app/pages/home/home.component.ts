@@ -7,10 +7,14 @@ import { Component } from "@angular/core";
 })
 export class HomeComponent {
   selectedTab: string = "todos";
+  selectIsOpen: boolean = false;
 
   selectTab(tab: string): void {
     this.selectedTab = tab;
   }
 
+  setSelectIsOpen(): void {
+    this.selectIsOpen = !this.selectIsOpen;
+  }
   
 }
