@@ -1,1 +1,20 @@
-<app-card />
+<div class="flex w-[90%] lg:w-full justify-between max-w-[1280px] mx-[50px] my-5">
+  <div>
+    <span class="font-semibold text-[12px] leading-5 text-center mr-3 cursor-pointer menu-item" [class.active]="selectedTab === 'todos'" (click)="selectTab('todos')">
+      TODOS OS PRODUTOS
+    </span>
+    <span class="font-semibold text-[12px] leading-5 text-center mr-3 cursor-pointer menu-item" [class.active]="selectedTab === 'camisetas'" (click)="selectTab('camisetas')">
+      CAMISETAS
+    </span>
+    <span class="font-semibold text-[12px] leading-5 text-center mr-3 cursor-pointer menu-item" [class.active]="selectedTab === 'canecas'" (click)="selectTab('canecas')">
+      CANECAS
+    </span>
+  </div>
+  <div>
+    ordenador
+    
+  </div>
+</div>
+<div >
+  <app-card class="flex flex-wrap w-[90%] lg:w-full justify-between max-w-[1280px] mx-[50px] my-5" />
+</div>
