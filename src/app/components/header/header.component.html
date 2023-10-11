@@ -6,9 +6,9 @@
     <div class="flex items-center">
       <div *ngIf="inputMobile" class="w-[390px] h-11 rounded-lg bg-[--bg-primary-color] relative">
         <input type="text" class="w-full h-full bg-[--bg-primary-color] rounded-lg outline-0 px-3 font-normal" placeholder="Procurando por algo específico?">
-        <button class="absolute right-3 bottom-[20%]">
+        <span class="absolute right-3 bottom-[20%] cursor-pointer">
           <i class="fas fa-search text-[--text-primary-color]"></i>
-        </button>
+        </span>
       </div>
       <div class="cart">
         <img src="../../../assets/shopping-bag.svg" alt="">
@@ -20,8 +20,8 @@
   </div>
   <div *ngIf="!inputMobile" class="w-[90%] mx-auto h-11 rounded-lg bg-[--bg-primary-color] border border-b-8 border-[--bg-header-color] relative">
     <input type="text" class="w-full h-full bg-[--bg-primary-color] rounded-lg outline-0 px-3 font-normal" placeholder="Procurando por algo específico?">
-    <button class="absolute right-3 bottom-[20%]">
+    <span class="absolute right-3 bottom-[20%] cursor-pointer">
       <i class="fas fa-search text-[--text-primary-color] bg-[--bg-primary-color]"></i>
-    </button>
+    </span>
   </div>
 </header>
