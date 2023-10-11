@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { ProductService } from "src/app/services/product.service";
+
 
 @Component({
   selector: "app-card",
@@ -6,8 +8,10 @@ import { Component } from "@angular/core";
   styleUrls: ["./card.component.scss"]
 })
 export class CardComponent {
-  name: string = "Caneca de cerâmica rústica";
-  price: string = "40.0";
-  image: string = "https://storage.googleapis.com/xesque-dev/challenge-images/caneca-06.jpg";
+  products = this.product.getProducts();
+
+  constructor(
+    private product: ProductService
+  ) {}
 }
 
